@@ -1,5 +1,4 @@
 import "../styles/globals.css";
-import Header from "./Header";
 
 export const metadata = {
   title: "Buckify",
@@ -12,9 +11,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <Header />
-      <body>{children}</body>
+    <html lang="en" className="h-full">
+      <body className="h-full">{children}</body>
     </html>
   );
 }
