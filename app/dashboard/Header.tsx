@@ -1,16 +1,12 @@
 import React from 'react'
-import {
-  BuildingOfficeIcon,
-  CheckCircleIcon,
-} from "@heroicons/react/20/solid";
 
 const Header = () => {
   return (
     <div className="bg-white shadow">
-      <div className="px-4 sm:px-6 lg:mx-auto lg:max-w-6xl lg:px-8">
-        <div className="py-6 md:flex md:items-center md:justify-between lg:border-t lg:border-gray-200">
-          <div className="min-w-0 flex-1">
-            {/* Profile */}
+      <div className="px-4 w-2/4 sm:px-6 lg:max-w-6xl lg:px-8">
+        <div className="py-6 flex-col md:flex md:items-start md:justify-around lg:border-gray-200">
+          {/* Profile */}
+          <div>
             <div className="flex items-center">
               <img
                 className="hidden h-16 w-16 rounded-full sm:block"
@@ -25,42 +21,32 @@ const Header = () => {
                     alt=""
                   />
                   <h1 className="ml-3 text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:leading-9">
-                    Good morning, Emilia Birch
+                    Hi, Emilia
                   </h1>
                 </div>
-                <dl className="mt-6 flex flex-col sm:ml-3 sm:mt-1 sm:flex-row sm:flex-wrap">
-                  <dt className="sr-only">Company</dt>
-                  <dd className="flex items-center text-sm font-medium capitalize text-gray-500 sm:mr-6">
-                    <BuildingOfficeIcon
-                      className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400"
-                      aria-hidden="true"
-                    />
-                    Duke street studio
-                  </dd>
-                  <dt className="sr-only">Account status</dt>
-                  <dd className="mt-3 flex items-center text-sm font-medium capitalize text-gray-500 sm:mr-6 sm:mt-0">
-                    <CheckCircleIcon
-                      className="mr-1.5 h-5 w-5 flex-shrink-0 text-green-400"
-                      aria-hidden="true"
-                    />
-                    Verified account
-                  </dd>
-                </dl>
               </div>
             </div>
           </div>
-          <div className="mt-6 flex space-x-3 md:mt-0 md:ml-4">
-            <button
-              type="button"
-              className="inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-            >
-              Add money
+
+          <div className="w-3/4">
+            <h2 className="mb-6 font-bold text-4xl">$50,000</h2>
+            <div className="flex justify-between text-2xl">
+              <p>Savings Goal</p>
+              <p>75,000</p>
+            </div>
+            <div className="mt-3 flex justify-between text-2xl">
+              <p>Amount needed</p>
+              <p>$25,000</p>
+            </div>
+          </div>
+
+          {/* Buttons */}
+          <div className="flex justify-between w-3/4">
+            <button type="button" className="btn btn-primary">
+              + Add money
             </button>
-            <button
-              type="button"
-              className="inline-flex items-center rounded-md bg-cyan-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600"
-            >
-              Send money
+            <button type="button" className="btn btn-secondary">
+              - Minus money
             </button>
           </div>
         </div>

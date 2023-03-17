@@ -71,8 +71,7 @@ export default function Dashboard() {
       <div className="min-h-full">
         <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
-        <div className="flex flex-1 flex-col lg:pl-64">
-          <Navbar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+        <div className="flex flex-1 flex-col lg:pl-40">
           <main className="flex-1 pb-8">
             <Header />
 
