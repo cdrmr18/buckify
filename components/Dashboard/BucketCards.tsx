@@ -1,4 +1,4 @@
-import React from 'react'
+
 import BucketCard from "./BucketCard";
 
 import { ScaleIcon } from "@heroicons/react/24/outline";

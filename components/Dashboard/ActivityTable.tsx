@@ -1,4 +1,4 @@
-import React from 'react'
+
 import TransactionRow from "./TransactionRow";
 import Pagination from "./Pagination";
 

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import ActivityNav from "./ActivityNav";
 import Transaction from "./Transaction";
 const transactions = [
@@ -12,7 +12,6 @@ const transactions = [
     date: "July 11, 2020",
     datetime: "2020-07-11",
   },
-  // More transactions...
 ];
 
 
