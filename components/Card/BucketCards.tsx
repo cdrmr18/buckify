@@ -5,7 +5,9 @@ import { ScaleIcon } from "@heroicons/react/24/outline";
 
 const cards = [
   { name: "Account balance", href: "#", icon: ScaleIcon, amount: "$30,659.45" },
-  // More items...
+  { name: "Account balance", href: "#", icon: ScaleIcon, amount: "$30,659.45" },
+  { name: "Account balance", href: "#", icon: ScaleIcon, amount: "$30,659.45" },
+  { name: "Account balance", href: "#", icon: ScaleIcon, amount: "$30,659.45" },
 ];
 
 const BucketCards = () => {

@@ -1,10 +1,9 @@
 "use client"
 import { useState } from "react";
-import Navbar from "./Navbar";
-import Sidebar from "./Sidebar";
-import Header from "./Header";
-import ActivityTable from "./ActivityTable";
-import ActivityList from "./ActivityList";
+import Sidebar from "../../components/Sidebar/Sidebar";
+import Header from "../../components/Dashboard/Header";
+import ActivityTable from "../../components/Activity/ActivityTable";
+import ActivityList from "../../components/Activity/ActivityList";
 import {
   ScaleIcon,
 } from "@heroicons/react/24/outline";
@@ -18,7 +17,7 @@ import {
   QuestionMarkCircleIcon,
   ShieldCheckIcon,
 } from "@heroicons/react/20/solid";
-import BucketCards from "./BucketCards";
+import BucketCards from "../../components/Card/BucketCards";
 
 
 
@@ -59,7 +58,7 @@ const cards = [
   // More items...
 ];
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
@@ -75,8 +74,8 @@ export default function Dashboard() {
           <main className="flex-1 pb-8">
             <Header />
 
-            <div className="mt-8">
-              <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <div className="py-8 bg-white">
+              <div className="overflow-auto mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
                 <h2 className="text-lg font-medium leading-6 text-gray-900">
                   Overview
                 </h2>
