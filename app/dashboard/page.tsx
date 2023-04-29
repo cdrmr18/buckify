@@ -71,7 +71,7 @@ export default function Dashboard() {
         <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
         <div className="flex flex-1 flex-col lg:pl-40">
-          <main className="flex-1">
+          <main className="flex-1 bg-gray-100">
             <Header />
 
             <div className="py-8 bg-white">
