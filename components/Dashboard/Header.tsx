@@ -2,33 +2,12 @@
 
 const Header = () => {
   return (
-    <div className="shadow py-8 w-full mx-auto">
-      <div className="flex mx-auto max-w-6xl px-4 sm:px-6 lg:max-w-6xl lg:px-8">
-        <div className="basis-2/5 py-6 flex-col md:flex md:items-start md:justify-around lg:border-gray-200">
-          {/* Profile */}
+    <div className="border-b py-8 w-full mx-auto px-6 lg:max-w-6xl lg:px-8">
+      <h1 className="text-lg font-semibold my-4">Dashboard</h1>
+      <div className="flex flex-col md:flex-row mx-auto max-w-6xl space-y-4">
+        <div className="basis-1/2 flex-col space-y-5 md:flex md:items-start md:justify-around lg:border-gray-200">
+          {/* FInance */}
           <div>
-            <div className="flex items-center">
-              <img
-                className="hidden h-16 w-16 rounded-full sm:block"
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.6&w=256&h=256&q=80"
-                alt=""
-              />
-              <div>
-                <div className="flex items-center">
-                  <img
-                    className="h-16 w-16 rounded-full sm:hidden"
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.6&w=256&h=256&q=80"
-                    alt=""
-                  />
-                  <h1 className="ml-3 text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:leading-9">
-                    Hi, Emilia
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="w-3/4 my-3">
             <h2 className="mb-6 font-bold text-3xl">$50,000</h2>
             <div className="flex justify-between text-2xl">
               <p>$75,000</p>
@@ -41,16 +20,24 @@ const Header = () => {
           </div>
 
           {/* Buttons */}
-          <div className="flex justify-between w-3/4 my-3">
-            <button type="button" className="btn btn-primary">
-              + Add money
+          <div className="flex justify-between my-3 w-full space-x-4">
+            <button
+              type="button"
+              className="bg-gray-800 text-white px-4 py-2 rounded-sm flex-grow"
+            >
+              Add money
             </button>
-            <button type="button" className="btn btn-secondary">
-              - Minus money
+            <button
+              type="button"
+              className="border border-gray-800 px-4 py-2 rounded-sm flex-grow"
+            >
+              Remove money
             </button>
           </div>
         </div>
-        <div className="basis-3/5">Statistics</div>
+
+        {/* Statistics */}
+        <div className="basis-1/2">Statistics</div>
       </div>
     </div>
   );
