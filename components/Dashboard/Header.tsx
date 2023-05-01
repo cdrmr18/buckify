@@ -2,7 +2,7 @@
 
 const Header = () => {
   return (
-    <div className="py-8 w-full mx-auto px-6 lg:max-w-6xl lg:px-8">
+    <div className="py-8 w-full mx-auto px-6 lg:max-w-6xl lg:px-8 ">
       <h1 className="text-xl font-semibold my-6">Dashboard</h1>
       <div className="flex flex-col md:flex-row mx-auto max-w-6xl space-y-6 md:space-x-12">
         {/* FInance */}
@@ -53,7 +53,7 @@ const Header = () => {
           <div className="bg-yellow-100 border border-gray-800 px-4 py-3 flex shadow-[5px_5px_black]">
             <div className="basis-1/2">
               <p className="text-xl font-bold">$30,000</p>
-              <p className="text-sm font-semibold">Total savings</p>
+              <p className="text-sm font-semibold">Total goals</p>
             </div>
             <div className="basis-1/2">charts</div>
           </div>

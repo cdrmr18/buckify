@@ -2,7 +2,7 @@
 export const SavingsTracker = ({goal}) => {
   const { id, name, amount } = goal;
   return (
-    <div className="border px-6 py-4">
+    <div className="border px-6 py-4 h-28">
       <h2 className="font-bold text-lg mb-3">{name} savings</h2>
       <div className="flex justify-between mb-1">
         <p className="text-md font-extralight">Total: ${amount - 400}</p>
