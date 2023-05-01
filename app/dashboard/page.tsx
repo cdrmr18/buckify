@@ -67,25 +67,23 @@ export default function Dashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <>
-      <div className="min-h-full">
-        <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+    <div className="min-h-full">
+      <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
-        <div className="flex flex-1 flex-col lg:pl-40">
-          <main className="flex-1 ">
-            <div className="w-full bg-gray-100">
-              <Header />
-            </div>
+      <div className="flex flex-1 flex-col lg:pl-40">
+        <main className="flex-1">
+          <div className="w-full bg-gray-100">
+            <Header />
+          </div>
 
-            <div className="py-8 w-full bg-white overflow-auto mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-              <h2 className="text-xl font-medium leading-6 text-gray-900 mb-5">
-                Accounts Overview
-              </h2>
-              <SavingsTrackerList />
-            </div>
-          </main>
-        </div>
+          <div className="py-8 w-full bg-white overflow-auto mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <h2 className="text-xl font-medium leading-6 text-gray-900 mb-5">
+              Accounts Overview
+            </h2>
+            <SavingsTrackerList />
+          </div>
+        </main>
       </div>
-    </>
+    </div>
   );
 }
