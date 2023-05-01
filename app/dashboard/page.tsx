@@ -17,7 +17,8 @@ import {
   QuestionMarkCircleIcon,
   ShieldCheckIcon,
 } from "@heroicons/react/20/solid";
-import BucketCards from "../../components/Card/BucketCards";
+import { SavingsTracker } from "../../components/Card/SavingsTracker";
+import SavingsTrackerList from "../../components/Card/SavingsTrackerList";
 
 
 
@@ -74,22 +75,11 @@ export default function Dashboard() {
           <main className="flex-1 bg-gray-100">
             <Header />
 
-            <div className="py-8 bg-white">
-              <div className="overflow-auto mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-                <h2 className="text-lg font-medium leading-6 text-gray-900">
-                  Overview
-                </h2>
-                <BucketCards />
-              </div>
-
-              <h2 className="mx-auto mt-8 max-w-6xl px-4 text-lg font-medium leading-6 text-gray-900 sm:px-6 lg:px-8">
-                Recent activity
+            <div className="py-8 bg-white overflow-auto mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+              <h2 className="text-xl font-medium leading-6 text-gray-900 mb-5">
+                Accounts Overview
               </h2>
-
-              {/* Activity list (smallest breakpoint only) */}
-              <ActivityList />
-              {/* Activity table (small breakpoint and up) */}
-              <ActivityTable />
+              <SavingsTrackerList />
             </div>
           </main>
         </div>

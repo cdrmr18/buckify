@@ -12,8 +12,8 @@ const Header = () => {
 
             <div className="flex justify-between space-x-6 lg:space-x-10">
               <div className="text-2xl space-y-2">
-                <p className="font-light">Savings Goal</p>
-                <p className="font-light">Amount needed</p>
+                <p className="font-light font-mono">Savings Goal</p>
+                <p className="font-light font-mono">Amount needed</p>
               </div>
 
               <div className="text-2xl font-semibold space-y-2">
@@ -27,13 +27,13 @@ const Header = () => {
           <div className="flex justify-between my-3 w-full lg:w-3/4 space-x-4">
             <button
               type="button"
-              className="bg-gray-800 text-white p-4 rounded-sm flex-grow"
+              className="bg-gray-800 text-white p-4 flex-grow"
             >
               Add money
             </button>
             <button
               type="button"
-              className="border border-gray-800 p-4 rounded-sm flex-grow"
+              className="border border-gray-800 p-4 flex-grow"
             >
               Remove money
             </button>
@@ -42,7 +42,7 @@ const Header = () => {
 
         {/* Statistics */}
         <div className="basis-1/2 space-y-6">
-          <div className="bg-blue-100 border border-gray-800 rounded-sm shadow-sm px-4 py-3 flex">
+          <div className="bg-blue-100 border border-gray-800 px-4 py-3 flex shadow-[5px_5px_black]">
             <div className="basis-1/2">
               <p className="text-xl font-bold">$30,000</p>
               <p className="text-sm font-semibold">Total savings</p>
@@ -50,7 +50,7 @@ const Header = () => {
             <div className="basis-1/2">charts</div>
           </div>
 
-          <div className="bg-yellow-100 border border-gray-800 rounded-sm shadow-sm px-4 py-3 flex">
+          <div className="bg-yellow-100 border border-gray-800 px-4 py-3 flex shadow-[5px_5px_black]">
             <div className="basis-1/2">
               <p className="text-xl font-bold">$30,000</p>
               <p className="text-sm font-semibold">Total savings</p>

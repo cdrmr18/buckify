@@ -2,7 +2,7 @@
 
 const BucketCard = ({card}) => {
   return (
-    <div key={card.name} className="overflow-hidden rounded-lg bg-white shadow">
+    <div key={card.name} className="overflow-hidden bg-white shadow">
       <div className="p-5">
         <div className="flex items-center">
           <div className="flex-shrink-0">
